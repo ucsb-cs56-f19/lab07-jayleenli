@@ -1,3 +1,5 @@
+Link to documentation web page <https://cs56-f19.github.io/lab07-jayleenli/apidocs/>
+
 A simple Spring Boot webapp using:
 * Thymeleaf templating
 * Pulling in Bootstrap from CDN.
