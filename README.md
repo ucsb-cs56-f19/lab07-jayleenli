@@ -1,4 +1,4 @@
-Link to documentation web page <https://cs56-f19.github.io/lab07-jayleenli/apidocs/>  
+Link to documentation web page <https://ucsb-cs56-f19.github.io/lab07-jayleenli/apidocs/>  
 Link to heroku app <https://cs56-f19-lab07-jayleenli.herokuapp.com/>
 
 A simple Spring Boot webapp using:
