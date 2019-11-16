@@ -74,8 +74,8 @@ public class HomePageTest {
     public void getHomePage_hasCorrectLink() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.TEXT_HTML))
                 .andExpect(status().isOk())
-                .andExpect(xpath("/html/body/div/nav/div/ul/li[2]/a").exists())
-                .andExpect(xpath("/html/body/div/nav/div/ul/li[2]/a").string("Earthquakes"));
+                .andExpect(xpath("/html/body/div/nav/div/ul/li[3]/a").exists())
+                .andExpect(xpath("/html/body/div/nav/div/ul/li[3]/a").string("Earthquakes"));
     }
 
 }
