@@ -12,6 +12,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 import com.nimbusds.oauth2.sdk.client.ClientReadRequest;
+import hello.geojson.FeatureCollection;
 
 @Controller
 public class WebController {
@@ -57,10 +58,12 @@ public class WebController {
 
     @GetMapping("/earthquakes/results")
     public String getEarthquakesResults(Model model, OAuth2AuthenticationToken oAuth2AuthenticationToken, EqSearch eqSearch) {
-	EarthquakeQueryService e = new EarthquakeQueryService();
-	model.addAttribute("eqSearch", eqSearch);
-	String json = e.getJSON(eqSearch.getDistance(), eqSearch.getMinmag());
-	model.addAttribute("json", json);
+    	EarthquakeQueryService e = new EarthquakeQueryService();
+    	model.addAttribute("eqSearch", eqSearch);
+    	String json = e.getJSON(eqSearch.getDistance(), eqSearch.getMinmag());
+    	model.addAttribute("json", json);
+    	FeatureCollection featureCollection = FeatureCollection.fromJSON(json);
+        model.addAttribute("featureCollection",featureCollection);
 	return "earthquakes/results";
     }
 }
