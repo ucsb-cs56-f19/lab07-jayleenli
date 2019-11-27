@@ -1,6 +1,7 @@
 Link to documentation web page <https://ucsb-cs56-f19.github.io/lab07-jayleenli/apidocs/>  
 Link to heroku app <https://cs56-f19-lab07-jayleenli.herokuapp.com/>  
-Link to Jacoco page <https://ucsb-cs56-f19.github.io/lab07-jayleenli/jacoco/>
+Link to Jacoco page <https://ucsb-cs56-f19.github.io/lab07-jayleenli/jacoco/>  
+Link to TravisCI <https://travis-ci.org/ucsb-cs56-f19/lab07-jayleenli>
 
 A simple Spring Boot webapp using:
 * Thymeleaf templating
